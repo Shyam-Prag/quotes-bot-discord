@@ -43,7 +43,7 @@ async def on_ready():
 #         await message.channel.send(response)
 
 
-@tasks.loop(hours=24)
+@tasks.loop(seconds=5)
 async def sendMotivationalMessage():
     response = requests.get("https://zenquotes.io/api/today")
     quote_json = response.json()
