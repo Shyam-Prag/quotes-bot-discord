@@ -59,4 +59,3 @@ async def on_ready():
     sendMotivationalMessage.start()
 
 client.run(TOKEN)
-#check
