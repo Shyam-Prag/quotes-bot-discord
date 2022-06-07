@@ -8,7 +8,7 @@ from discord.ext import tasks
 from dotenv import load_dotenv
 
 load_dotenv()
-TOKEN = os.getenv('DISCORD_TOKEN')
+TOKEN = os.environ.get('DISCORD_TOKEN')
 
 client = discord.Client()
 channel = client.get_channel(982704426454229006)
